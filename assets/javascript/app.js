@@ -1,0 +1,1 @@
+moment($("#frequency")).format("HH:mm");
