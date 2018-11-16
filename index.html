@@ -11,19 +11,24 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
     <style>
         form {
                 border-radius: 5px;
                 background-color: #f2f2f2;
                 padding: 20px;
             }
-           
+            .table {
+                
+                background-color: #f2f2f2;
+                
+            }    
             </style>
 </head>
 
 <body>
-    <div class="jumbotron">
-        <h1>Train Time</h1>
+    <div class="jumbotron text-white bg-primary">
+        <h1 style="text-align:center">Train Time</h1>
     </div>
     <div class="container">
         <table class="table">
@@ -56,7 +61,7 @@
                 <input type="text" class="form-control" id="destination" placeholder="Enter Destination Name">
             </div>
             <div class="form-group">
-                <label for="time">First Train Time (HH:mm - military time)</label>
+                <label for="time">First Train Time</label>
                 <input type="time" class="form-control" id="time" placeholder="Enter Time">
             </div>
             <div class="form-group">
